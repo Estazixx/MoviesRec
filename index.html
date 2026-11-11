@@ -1,11 +1,155 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moviesrec.com</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoviesRec – Free movies you can watch right now</title>
+  <meta name="description" content="Find movies that are free to stream legally today, checked daily.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>Hello</h1> 
+
+  <header class="site-header">
+    <a class="logo" href="#">MoviesRec</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#new">New this week</a>
+      <a href="#browse">Browse</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Movies that are free to watch today.</h1>
+      <p class="hero-sub">Every title here streams legally at no cost. We check availability daily.</p>
+
+      <form class="search" role="search" action="#browse">
+        <label class="visually-hidden" for="q">Search movies</label>
+        <input id="q" type="search" placeholder="Search by title, actor or genre">
+        <select aria-label="Country">
+          <option>Latvia</option>
+          <option>United States</option>
+          <option>United Kingdom</option>
+          <option>Germany</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section class="filters" id="browse" aria-label="Filters">
+      <button class="chip is-active" type="button">All</button>
+      <button class="chip" type="button">Action</button>
+      <button class="chip" type="button">Comedy</button>
+      <button class="chip" type="button">Drama</button>
+      <button class="chip" type="button">Horror</button>
+      <button class="chip" type="button">Sci-Fi</button>
+      <button class="chip" type="button">Family</button>
+      <button class="chip" type="button">Under 90 min</button>
+    </section>
+
+    <section class="movies" id="new" aria-labelledby="new-title">
+      <div class="section-head">
+        <h2 id="new-title">New this week</h2>
+        <p>Last checked today</p>
+      </div>
+
+      <div class="grid">
+
+        <article class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhvMS-ST7FQW-5FHW78HhrXNgEeB1frVw98DevnSrjlA&s=10" alt="Midnight Harbor poster" class="poster-image">
+          <div class="card-body">
+            <h3>Midnight Harbor</h3>
+            <p class="meta">2025 · Thriller · 104 min</p>
+            <p class="rating">★ 3.2</p>
+          </div>
+          <div class="stub">
+            <span class="badge">Free</span>
+            <span class="platform">Fandango</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk_rwama8bFV2uw4Hw22XjvWKSfdFE0FEewBrJjh0Nnw&s=10" alt="The Last Lighthouse poster" class="poster-image">
+          <div class="card-body">
+            <h3>The Last Lighthouse</h3>
+            <p class="meta">2024 · Drama · 118 min</p>
+            <p class="rating">★ 7.3</p>
+          </div>
+          <div class="stub">
+            <span class="badge">Paid</span>
+            <span class="platform">IMDb</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoIAjOlAr1sQgRJANdZB6AoeERI-8fny82mRfepJU_VA&s=10" alt="Prime Orbit poster" class="poster-image">
+          <div class="card-body">
+            <h3>Prime Orbit</h3>
+            <p class="meta">2023 · Sci-Fi · 96 min</p>
+            <p class="rating">★ 3</p>
+          </div>
+          <div class="stub">
+            <span class="badge">Region restricted</span>
+            <span class="platform">Tubi · free with ads (not available in Latvia)</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkVuG4shYHD2DvS2NPLq5bRfRCrzWOGBXaIYhzddEE_Q&s=10" alt="Fight Club poster" class="poster-image">
+          <div class="card-body">
+            <h3>Fight Club</h3>
+            <p class="meta">1999 · Crime Film · 139 min</p>
+            <p class="rating">★ 8.8</p>
+          </div>
+          <div class="stub">
+            <span class="badge">Paid</span>
+            <span class="platform">HBO Max · subscription (Latvia)</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/5/5c/Don%27t_Look_Up_2021_film.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Don't look up poster" class="poster-image">
+          <div class="card-body">
+            <h3>Don't look up</h3>
+            <p class="meta">2021 · Comedy · 145 min</p>
+            <p class="rating">★ 7.1</p>
+          </div>
+          <div class="stub">
+            <span class="badge">Paid</span>
+            <span class="platform">Netflix · subscription (Latvia)</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg8ZBBUbkiDl8y-uQAt8OyUKjcUXnhMvEnMqGL7F_ebw&s=10" alt="The Godfather poster" class="poster-image">
+          <div class="card-body">
+            <h3>The Godfather</h3>
+            <p class="meta">1972 · Crime Drama · 175 min</p>
+            <p class="rating">★ 9.2</p>
+          </div>
+          <div class="stub">
+            <span class="badge">Paid</span>
+            <span class="platform">Apple TV Store · rent or buy (Latvia)</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>How this works</h2>
+      <p>We list only legal free sources: ad-supported streaming, library services and public domain films. Availability changes often, so each title shows when it was last checked and links to the service that hosts it.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Movie data from TMDB. Streaming availability from JustWatch. This site is not endorsed or certified by TMDB.</p>
+    <p>© 2026 FreeReel</p>
+  </footer>
+
 </body>
 </html>
