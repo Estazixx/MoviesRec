@@ -39,7 +39,13 @@ const POPULAR_TITLES = [
     "Spider-Man No Way Home",
     "The Matrix",
     "Gladiator",
-    "Parasite"
+    "Parasite",
+    "The Odyssey",
+    "The Godfather",
+    "Fight Club",
+    "The Hunger Games",
+    "War Machine",
+    "Avengers: Endgame",
 ];
 
 function readWatchlist() {
