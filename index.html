@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Favicon.png" />
     <title>MovieREC</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -51,11 +52,11 @@
             </p>
 
             <div class="hero-actions">
-                <button class="button button-primary" id="heroDetails" disabled>
+                <button class="button button-primary" id="heroDetails" enabled>
                     More information
                 </button>
 
-                <button class="button button-ghost" id="heroSave" disabled>
+                <button class="button button-ghost" id="heroSave" enabled>
                     ♡ Add to watchlist
                 </button>
             </div>
@@ -136,7 +137,7 @@
 <!-- MOVIE DETAILS POPUP -->
 
 <dialog class="details-dialog" id="detailsDialog">
-    <button class="dialog-close" id="dialogClose">×</button>
+    <button class="dialog-close" id="dialogClose">x</button>
     <div id="detailsContent"></div>
 </dialog>
 
